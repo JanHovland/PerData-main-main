@@ -116,8 +116,8 @@ struct userRecordOverViewIndexed: View {
                         }
                     })
                 } // ScrollViewReader
-                .overlay(sectionIndexTitles(proxy: proxy,
-                                            titles: sectionHeader))
+//                .overlay(sectionIndexTitles(proxy: proxy,
+//                                            titles: sectionHeader))
             }
         } // NavigationView
         .searchable(text: $searchText, placement: .navigationBarDrawer, prompt: "Search firstName")

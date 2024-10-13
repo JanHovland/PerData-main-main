@@ -31,6 +31,8 @@
 ///
 
 
+/// https://www.hackingwithswift.com/quick-start/swiftui/how-to-add-a-search-bar-to-filter-your-data
+
 import SwiftUI
 import CloudKit
 import Network
@@ -130,7 +132,7 @@ struct PerDataIndexed: View {
                         VStack (alignment: .leading) {
                             ForEach(sectionHeader, id: \.self) { letter in
                                
-                                Section(header: SectionHeader(letter: letter)) {
+//                                Section(header: SectionHeader(letter: letter)) {
                                     
                                     ForEach(persons.filter( {
                                         (person) -> Bool in
@@ -173,13 +175,13 @@ struct PerDataIndexed: View {
                                     }
                                     
                                     
-                                } // Section(header:
+//                                } // Section(header:
                             } // ForEach(sectionHeader
                             
                         } // VStack
                     } // ScrollView
-                    .overlay(sectionIndexTitles(proxy: proxy,
-                                                titles: sectionHeader))
+//                    .overlay(sectionIndexTitles(proxy: proxy,
+//                                                titles: sectionHeader))
                     
                 } // ScrollViewReader
             }
