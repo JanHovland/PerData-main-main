@@ -28,6 +28,7 @@
 		DB64C0312755324F004709C4 /* UserRecordOverViewIndexed.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB64C0302755324F004709C4 /* UserRecordOverViewIndexed.swift */; };
 		DB64C033275536A2004709C4 /* IndexedTableViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB64C032275536A2004709C4 /* IndexedTableViewHelper.swift */; };
 		DB64C03727569172004709C4 /* PerDataIndexed.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB64C03627569172004709C4 /* PerDataIndexed.swift */; };
+		DB759E162CBD6A9D00DB67E8 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB759E152CBD6A8E00DB67E8 /* Extension.swift */; };
 		DB81CA66274263F700E69D57 /* PersonDetailMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB81CA65274263F700E69D57 /* PersonDetailMapView.swift */; };
 		DB81CA682742665700E69D57 /* PersonDetailPhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB81CA672742665700E69D57 /* PersonDetailPhoneView.swift */; };
 		DB81CA6A274272BD00E69D57 /* PersonDetailMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB81CA69274272BD00E69D57 /* PersonDetailMessageView.swift */; };
@@ -75,7 +76,6 @@
 		DBDF4D6A2743D2DA0019D879 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDF4D692743D2DA0019D879 /* User.swift */; };
 		DBDF4D6C2743D34A0019D879 /* UserRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDF4D6B2743D34A0019D879 /* UserRecord.swift */; };
 		DBE25B5D270C556200AE255B /* PerDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE25B5C270C556200AE255B /* PerDataApp.swift */; };
-		DBE25B5F270C556200AE255B /* PerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE25B5E270C556200AE255B /* PerData.swift */; };
 		DBE25B61270C556400AE255B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBE25B60270C556400AE255B /* Assets.xcassets */; };
 		DBE25B64270C556400AE255B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBE25B63270C556400AE255B /* Preview Assets.xcassets */; };
 		DBE25B6D270C55C500AE255B /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBE25B6C270C55C500AE255B /* CloudKit.framework */; };
@@ -105,6 +105,7 @@
 		DB64C0302755324F004709C4 /* UserRecordOverViewIndexed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRecordOverViewIndexed.swift; sourceTree = "<group>"; };
 		DB64C032275536A2004709C4 /* IndexedTableViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexedTableViewHelper.swift; sourceTree = "<group>"; };
 		DB64C03627569172004709C4 /* PerDataIndexed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerDataIndexed.swift; sourceTree = "<group>"; };
+		DB759E152CBD6A8E00DB67E8 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		DB81CA65274263F700E69D57 /* PersonDetailMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailMapView.swift; sourceTree = "<group>"; };
 		DB81CA672742665700E69D57 /* PersonDetailPhoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailPhoneView.swift; sourceTree = "<group>"; };
 		DB81CA69274272BD00E69D57 /* PersonDetailMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailMessageView.swift; sourceTree = "<group>"; };
@@ -153,7 +154,6 @@
 		DBDF4D6B2743D34A0019D879 /* UserRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRecord.swift; sourceTree = "<group>"; };
 		DBE25B59270C556200AE255B /* PerData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PerData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBE25B5C270C556200AE255B /* PerDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerDataApp.swift; sourceTree = "<group>"; };
-		DBE25B5E270C556200AE255B /* PerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerData.swift; sourceTree = "<group>"; };
 		DBE25B60270C556400AE255B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBE25B63270C556400AE255B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DBE25B6A270C55B500AE255B /* PerData.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PerData.entitlements; sourceTree = "<group>"; };
@@ -217,7 +217,6 @@
 			isa = PBXGroup;
 			children = (
 				DB587897275E3634004C4F65 /* PersonBirthdayView.swift */,
-				DBE25B5E270C556200AE255B /* PerData.swift */,
 				DB64C03627569172004709C4 /* PerDataIndexed.swift */,
 				DBE25B5C270C556200AE255B /* PerDataApp.swift */,
 				DB55163C2727E84600153A9A /* PersonDetailView.swift */,
@@ -241,6 +240,14 @@
 				DB4BBA29274979AE00771D7A /* SignUpView.swift */,
 			);
 			path = SignInUp;
+			sourceTree = "<group>";
+		};
+		DB759E142CBD6A7E00DB67E8 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DB759E152CBD6A8E00DB67E8 /* Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		DB81CA712742746600E69D57 /* Mail */ = {
@@ -364,6 +371,7 @@
 		DBE25B5B270C556200AE255B /* PerData */ = {
 			isa = PBXGroup;
 			children = (
+				DB759E142CBD6A7E00DB67E8 /* Extension */,
 				DB01A8312726C05A007721E1 /* Info.plist */,
 				DB01A83E2726C3D1007721E1 /* Localizable.strings */,
 				DB01A83B2726C3D1007721E1 /* InfoPlist.strings */,
@@ -491,9 +499,9 @@
 				DB81CA6E274273D300E69D57 /* PersonDetailMailView.swift in Sources */,
 				DB8476E1270F6742007D3E18 /* Person.swift in Sources */,
 				DBB366AD274E6C39001CB47A /* BackupPersonsToJsonBackupFileView.swift in Sources */,
-				DBE25B5F270C556200AE255B /* PerData.swift in Sources */,
 				DB0AD89F275185D600A3F8C3 /* BackupUserRecordsToJsonBackupFileView.swift in Sources */,
 				DB64C033275536A2004709C4 /* IndexedTableViewHelper.swift in Sources */,
+				DB759E162CBD6A9D00DB67E8 /* Extension.swift in Sources */,
 				DB9B09B127428AA000160195 /* CabinOverView.swift in Sources */,
 				DBDF4D662743D00B0019D879 /* CloudKitUserRecord.swift in Sources */,
 				DB0AD8A12751870500A3F8C3 /* BackupUserRecordsToJsonBackupFile.swift in Sources */,
@@ -708,13 +716,14 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PerData/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -745,13 +754,14 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PerData/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -26,7 +26,7 @@ func ParseCSV (contentsOfURL: URL,
     var zipCodes: [(ZipCode)]?
     
     do {
-        let content = try String(contentsOf: contentsOfURL)
+        let content = try String(contentsOf: contentsOfURL, encoding: .ascii)
         
         zipCodes = []
         let lines: [String] = content.components(separatedBy: .newlines)

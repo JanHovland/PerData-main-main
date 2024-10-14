@@ -144,7 +144,7 @@ struct PerDataIndexed: View {
                                             NavigationLink(destination: PersonUpdateView(person: person)) {
                                                 VStack (alignment: .leading) {
                                                     PersonDetailView(person: person)
-                                                    HStack {
+                                                    HStack (spacing: UIDevice.isIpad ? 60 : 30) {
                                                         PersonDetailMapView(person: person)
                                                         PersonDetailPhoneView(person: person)
                                                         PersonDetailMessageView(person: person)
@@ -173,16 +173,10 @@ struct PerDataIndexed: View {
                                             await refreshPersonsIndexed(predicate: predicate)
                                         }
                                     }
-                                    
-                                    
-//                                } // Section(header:
                             } // ForEach(sectionHeader
-                            
                         } // VStack
+                        .padding(.leading, UIDevice.isIpad ? 60 : 30)
                     } // ScrollView
-//                    .overlay(sectionIndexTitles(proxy: proxy,
-//                                                titles: sectionHeader))
-                    
                 } // ScrollViewReader
             }
             .alert(title, isPresented: $isAlertActive) {

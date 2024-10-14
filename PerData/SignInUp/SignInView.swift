@@ -183,14 +183,12 @@ struct SignInView: View {
                 }
                 .padding(.top, 30)
                 .padding(.bottom, 50)
-                
-                .sheet(isPresented: $runPerDataIndexed, content: {
+                .fullScreenCover(isPresented: $runPerDataIndexed, content: {
                     PerDataIndexed()
                 })
-                .sheet(isPresented: $runSignUpView, content: {
+                .fullScreenCover(isPresented: $runSignUpView, content: {
                     SignUpView()
                 })
-                
             }
         }
         
