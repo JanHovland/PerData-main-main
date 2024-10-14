@@ -19,6 +19,9 @@ struct PersonDetailView: View {
     var body: some View {
         VStack (alignment: .leading) {
             HStack {
+                
+//
+                
                 if person.image != nil {
                     Image(uiImage: person.image!)
                         .resizable()
@@ -35,7 +38,7 @@ struct PersonDetailView: View {
                     Text(person.firstName)
                     Text(person.lastName)
                 }
-                .dynamicTypeSize(.xSmall ... .small)  
+                .dynamicTypeSize(.xSmall ... .small)
                 .foregroundColor(.purple)
                 Spacer()
             }
@@ -43,7 +46,7 @@ struct PersonDetailView: View {
             Text(person.address)
             
             Text(person.cityNumber + " " + person.city)
-            .padding(.bottom, 5)
+                .padding(.bottom, 5)
         }
     }
 }
